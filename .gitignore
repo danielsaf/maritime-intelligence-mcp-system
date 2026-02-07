@@ -4,3 +4,5 @@ infrastructure/.env
 .DS_Store
 __pycache__/
 *.pyc
+/frontend/test-results/
+/frontend/playwright-report/
