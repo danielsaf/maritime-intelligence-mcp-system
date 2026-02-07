@@ -288,3 +288,29 @@ You can integrate this system with Claude Desktop to allow the AI to perform mar
 3.  **Restart Claude Desktop**:
     Once restarted, you will see a 🔌 icon indicating that the Maritime Intelligence tools are ready to use.
 
+---
+
+## 📝 TODO / Roadmap
+
+List of ideas and planned features to expand the Maritime Intelligence system.
+
+### 🛡 Security & Intelligence
+- [ ] **Advanced Anomaly Detection**: Implement Machine Learning models (e.g., Isolation Forest) to detect unusual vessel patterns based on historical data.
+- [ ] **Geofencing Alerts**: Add a UI editor to define custom "No-Go" zones with instant Email notifications.
+- [ ] **Weather Overlay**: Integrate OpenWeatherMap API to correlate vessel behavior with sea conditions (e.g., seeking shelter during storms).
+
+### 🖥 Frontend & UX
+- [ ] **Dark Mode Support**: Professional high-contrast theme for night watch operations.
+- [ ] **Vessel History Trails**: Ability to click a vessel and see its path (breadcrumbs) for the last 24 hours.
+- [ ] **Search & Filter**: Advanced filtering by Vessel Type, Flag, or Speed directly on the map.
+
+### 🤖 AI & MCP Integration
+- [ ] **Automated PDF Reports**: Generate security shift reports using Claude based on detected anomalies.
+- [ ] **Voice Commands**: Integrated voice interface via MCP to ask "Where is the nearest suspicious vessel?".
+- [ ] **Multi-Agent Simulation**: Use agents to simulate "Red Team" vessel behavior for training operators.
+
+### ⚙️ DevOps & Infrastructure
+- [ ] **CI/CD Pipeline**: Automate Playwright and Unit tests using GitHub Actions.
+- [ ] **K8s Deployment**: Helm charts for scaling the system in a Kubernetes cluster.
+- [ ] **TimescaleDB Integration**: Optimize storage for massive historical AIS data tracking.
+
