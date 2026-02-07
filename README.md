@@ -2,6 +2,11 @@
 
 The core analytical engine of the Maritime Intelligence System. This backend handles high-frequency AIS data ingestion, real-time spatial analysis via PostGIS, and provides an AI-native interface through the Model Context Protocol (MCP).
 
+## 🔒 Security Features
+* **Signal Blackout Detection**: Automatic identification of vessels that have ceased transmission in sensitive areas.
+* **Jamming Cluster Analysis**: Spatial clustering of lost signals to pinpoint potential localized interference.
+* **Real-time Geofencing**: Instantaneous alerting when high-speed vessels enter critical harbor zones.
+
 ---
 
 ### 📺 Application Preview (Frontend & Claude) `[DEMO]`
@@ -9,8 +14,7 @@ The core analytical engine of the Maritime Intelligence System. This backend han
 
   ### Tactical Map & AI Integration
   This clip demonstrates the real-time vessel tracking on the React dashboard and the MCP tool execution within Claude Desktop.
-
-  <video src="https://github.com/user-attachments/assets/5526648d-1376-4134-b03e-4983b59a75fc" width="100%" controls>
+  <video src="https://github.com/user-attachments/assets/cec654af-852a-42d6-89be-b25535ff6a8e" width="100%" controls>
     Your browser does not support the video tag.
   </video>
 
@@ -90,11 +94,6 @@ The system relies on high-performance spatial indexing:
 * **Spatial Index**: `GIST` indexes are applied to both tables to ensure sub-millisecond query times for `ST_DWithin` and `ST_Contains` operations.
 
 ---
-
-## 🔒 Security Features
-* **Signal Blackout Detection**: Automatic identification of vessels that have ceased transmission in sensitive areas.
-* **Jamming Cluster Analysis**: Spatial clustering of lost signals to pinpoint potential localized interference.
-* **Real-time Geofencing**: Instantaneous alerting when high-speed vessels enter critical harbor zones.
 
 ## 🚀 Installation & Setup
 
