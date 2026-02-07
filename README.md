@@ -14,7 +14,8 @@ The core analytical engine of the Maritime Intelligence System. This backend han
 
   ### Tactical Map & AI Integration
   This clip demonstrates the real-time vessel tracking on the React dashboard and the MCP tool execution within Claude Desktop.
-  <video src="https://github.com/user-attachments/assets/cec654af-852a-42d6-89be-b25535ff6a8e" width="100%" controls>
+  
+  <video src="https://github.com/user-attachments/assets/d9bd8c22-c82e-45c3-a093-7ba4bdf03e95" width="100%" controls>
     Your browser does not support the video tag.
   </video>
 
