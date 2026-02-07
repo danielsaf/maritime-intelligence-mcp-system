@@ -127,6 +127,32 @@ This is the recommended way to run the entire stack (Database, Backend, and Fron
     * **Backend API**: [http://localhost:8000/docs](http://localhost:8000/docs)
 ---
 
+### 📄 Example .env File
+
+Create a file named `.env` in your `infrastructure/` directories and populate it with the following variables:
+
+```ini
+# --- Database Configuration ---
+# Local development (direct access)
+DB_URL=postgresql://maritime:maritime_pass@localhost:5432/maritime_intelligence
+# Docker infrastructure (internal network access)
+# DB_URL=postgresql://maritime:maritime_pass@db:5432/maritime_intelligence
+
+# PostGIS Container Credentials (used by docker-compose)
+POSTGRES_USER=maritime
+POSTGRES_PASSWORD=maritime_pass
+POSTGRES_DB=maritime_intelligence
+
+# --- AIS API Keys ---
+# Get your free key at [https://aisstream.io/](https://aisstream.io/)
+AIS_API_KEY=your_aisstream_api_key_here
+
+# --- App Settings ---
+LOG_LEVEL=INFO
+DEBUG=True
+MCP_MODE=false # Set to true only when running as a Claude Desktop agent
+```
+
 ## 🚦 Step-by-Step Installation
 
 Follow these steps in the exact order to get the system running locally.
